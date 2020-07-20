@@ -1,0 +1,23 @@
+
+The above programs are design aids for network deployments.
+
+Replace Variables will replace variables in a template file.
+
+It will ask for the name of the script template, and then ask for the
+name of a comma seperated values file (*.csv). The *.csv file contains the
+variable names to be replaced in the first column, and the corresponding value to
+replace it with in the second column. It will then display the variable/value
+pairs and the template script, and present a button to invoke doing the variable
+replacement. By convention, variable names should start with a $.  When you invoke
+the replace variables function, it will display whatever $ it finds in the script
+so that you can be sure you have values fror all of the variables.
+
+Compute MTBF will find the lowest MTBF path between two given nodes.
+
+Diverse path computation will find the shortest length path that does not
+traverse a list of shared risk link groups to be avoided.
+
+As input, the programs read a file nodes.csv, which contains node names and for each node
+the MTBF value for that node.  They also read spans.csv, which contains four columns, the from 
+location name, the destination location name, the length of the path, and the shared risk link
+group that the span in question belongs to.

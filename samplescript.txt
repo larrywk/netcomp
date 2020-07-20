@@ -1,0 +1,38 @@
+//l2vpn pw-class
+l2vpn
+ pw-class deep
+  encapsulation mpls
+   protocol ldp
+   control-word
+   transport-mode vlan
+!
+!
+!
+
+//l2vpn xconnect group
+l2vpn
+ xconnect group xc1
+  p2p @EtherNum 
+   interface PW-Ether@EtherNum
+   neighbor $neighbor_IP pw-id @neighbor_PW 
+    pw-class deep
+
+//Generic interface list configuration
+generic-interface-list double1
+ interface GigabitEthernet0/3/0/1
+ interface Bundle-Ether 101
+!
+
+//pw-ether interface configuration
+interface pw-ether101
+ l2overhead 64
+ attach generic-interface-list double1
+mac-address <mac-address>
+!
+
+interface pw-ether 101.1
+  encapsulation dot1q 10
+ ipv6 address 1001::1/64
+ ipv4 address $address 255.255.255.0
+!
+
