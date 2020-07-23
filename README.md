@@ -1,4 +1,8 @@
 # netcomp
+This collection of Python code was written to demonstate how Python can be used to work on network engineering questions
+It contains modules that will read from comma seperated values files, and interact with the user via a GUI written with
+the Python GUI toolkit tkinter.
+
 Python code to compute best network path
 If you load this code into a directory on a Linux machine with Python37 installed
 you can then invoke it by running the go.sh script included
