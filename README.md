@@ -10,7 +10,7 @@ in a list of spans, or taking a script with variables in it and doing the variab
 
 Python code to compute best network path
 If you load this code into a directory on a Linux machine with Python37 installed
-you can then invoke it by running the go.sh script included
+you can then invoke it by running the go.sh script included.  Alternatively, it has been tested on Anaconda3 on Windows 10.
 
 The input  files that you need are:
   1. nodes.csv, a comma seperatedvalues file with nodename, mean time between failure in hours
