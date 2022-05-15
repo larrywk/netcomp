@@ -9,7 +9,7 @@ It contains a working example of computing the Mean Time Between Failure for a n
 in a list of spans, or taking a script with variables in it and doing the variable substitution.
 
 
-If you load this code into a directory on a Linux machine with Python37 installed
+If you load this code into a directory on a Linux machine with Python37 and python3-tk (tkinter) installed and with X11 capabilities,
 you can then invoke it by running the go.sh script included.  Alternatively, it has been tested on Anaconda3 on Windows 10.
 
 The input  files that you need are:
