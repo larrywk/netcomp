@@ -131,10 +131,10 @@ def findvars():
     global blob
     global foundat
     ix = 1
-    displaytext=" @ found at \n"
+    displaytext=" $ found at \n"
     savedisplaytext=displaytext
-    while blob.find("@",ix,len(blob)) > 0:
-         ix = blob.find("@",ix,len(blob))
+    while blob.find("$",ix,len(blob)) > 0:
+         ix = blob.find("$",ix,len(blob))
          linenum=len(blob[0:ix].splitlines())
          displaytext=displaytext+" found on line "+str(linenum)+"\n"
          ix = ix + 1
