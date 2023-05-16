@@ -1,4 +1,4 @@
-@EtherNum,101
-@address,162.161.1.2
-@neighbor_IP,3.3.3.3
-@neighbor_PW,2300
+$EtherNum,101
+$address,162.161.1.2
+$neighbor_IP,3.3.3.3
+$neighbor_PW,2300
