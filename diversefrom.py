@@ -287,7 +287,7 @@ class Application(tk.Frame):
         self.sel_to_node["text"] = "Select TO node"
         self.sel_to_node["width"]=14
         self.sel_to_node ["command"] = self.to_node
-        self.sel_to_node.grid(row=4,column=3,sticky="w")
+        self.sel_to_node.grid(row=4,column=3,sticky="wn")
         
         self.addavoid = tk.Button(root)
         self.addavoid["text"]="Add AVOID SRLG"
@@ -305,7 +305,7 @@ class Application(tk.Frame):
         self.compute_path["command"] = self.compute_pth
         self.compute_path.grid(row=6,column=3,sticky="w")
 
-        self.output= tk.Text(root, height=20, width=65)
+        self.output= tk.Text(root, height=15, width=65)
         self.output.grid(row=7,column=2,columnspan=4)
 
 	
@@ -317,7 +317,7 @@ class Application(tk.Frame):
         self.to_node   = tk.Label(root)
         self.to_node["fg"]="blue"
         self.to_node["text"]="       To"
-        self.to_node.grid(row=4,column=2,sticky="e")
+        self.to_node.grid(row=4,column=2,sticky="en")
 
         self.spacer0 = tk.Label(root)
         self.spacer0 ["text"]="    "
@@ -457,8 +457,9 @@ for line in byline:
             
             
 root = tk.Tk()
-root.title(" Compute Shortest path which avoids SRLGs")
-root.geometry('900x700+0+0')
+blank_space=" "
+root.title(".                                 Compute Shortest path which avoids SRLGs")
+root.geometry('1000x700+50+50')
 
 app = Application(root)  # instantiate class
 
