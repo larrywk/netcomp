@@ -77,6 +77,9 @@ class Application(tk.Frame):
         self.QUIT["command"] =  close_app
         self.QUIT.grid(row=1,column=5,sticky="ew")
         
+        self.curdir = tk.Label(frame2)
+        self.curdir["text"]=os.path.realpath(f.name)
+        self.curdir.grid(sticky="ew")
         
         self.findthem=tk.Button(frame2)
         self.findthem["text"]=" Find vars "
@@ -144,7 +147,7 @@ def findvars():
       
 #--------  Start of main code -----------------------------------------
 root=tk.Tk()
-root.geometry('960x640+0+0')
+root.geometry('960x640+50+50')
 root.title("Replace variable in script")
 
 frame1=tk.Frame(root)
