@@ -4,6 +4,7 @@
 # which is diverse from a shared risk link group list.
 # 
 import tkinter as tk
+from tkinter import messagebox
 import os
 #from os import path
 from datetime import datetime
@@ -50,6 +51,9 @@ def spanlookup():  # Routine to read comma seperated values
     global spandict # spans and their index value
     global fiberlen  # fiber length indexed by span
     global srlg      # shared risk link group identifier for span
+    #startat="zero"
+    #srlg.append(startat)  # start counting at 1
+    #fiberlen.append(0)    #
     for line in byline:
 
         if len(line.split(",")) < 2:    # if less than two commas
@@ -103,7 +107,6 @@ def find_shortest_path(graph, start, end, path=[]):
                     #if not shortest or len(newpath) < len(shortest):
                    if not shortest or newlen < shortlen:
                         shortest = newpath
-      
         return shortest
     
 def runshortest(startnode,endnode,fname):
@@ -152,7 +155,7 @@ def runshortest(startnode,endnode,fname):
         totallength=0
         
         avoidit.delete(0,tk.END)  # Clear existing srlg list to avoid
-        
+        #print(srlg)
         fo.write( "             Span       Total")
         fo.write("\n")
         fo.write ("Node         Length     Length  SRLG \n")
@@ -174,6 +177,8 @@ def runshortest(startnode,endnode,fname):
                 fo.write ('{:,}'.format(totallength).rjust(11))
                 fo.write("  ")
                 fo.write(spansrlg)
+                fo.write(" ")
+                fo.write(str(ix))
                 
                 if spansrlg not in srlglist:# New list for next time
                     srlglist.append(spansrlg)
@@ -197,7 +202,7 @@ def runshortest(startnode,endnode,fname):
 
 class Application(tk.Frame):
     def callback(ignore):
-         if tk.messagebox.askokcancel("Quit", \
+        if tk.messagebox.askokcancel("Quit", \
                                       "Do you really wish to quit?"):
              root.destroy()
              os.sys.exit()
@@ -379,7 +384,8 @@ class Application(tk.Frame):
         SRLG_scroll.config(command=SRLG_Box.yview)
         
         last=""
-        sortedsrlg=srlg  # need to preserve the index order of srlg
+        #print(srlg)
+        for each in srlg:    sortedsrlg.append(each)		 # need to preserve the index order of srlg
         sortedsrlg.sort()  # but need to process in order to remove dups
         for each in sortedsrlg:
             if each != last :  # We just load unique values in order
@@ -424,6 +430,7 @@ def checkkey(event):    # Move to this letter in the listbox
  #--------   Start of main code ----------------------------
 global fiberlen
 global srlg
+global sortedsrlg
 global spandict
 global avoidlist  #  list of srlgs to be avoided
 global graph
@@ -431,7 +438,8 @@ global timestampStr  # time program was invoked
 
 
 fiberlen=[]  # List of fiber span lengths
-srlg=[]      # List of shared risk link groups  
+srlg=[]      # List of shared risk link groups 
+sortedsrlg=[] 
 sellist=[]   # selection list with contents of listbox
 avoidlist=[] # list of srlg's to avoid
 spandict={}  # dictionary of spans and their index number
