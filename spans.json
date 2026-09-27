@@ -1,0 +1,332 @@
+[
+  {
+    "node": "2Z2",
+    "dest": "9V0",
+    "fiber_length": 11000,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "2Z2",
+    "dest": "A",
+    "fiber_length": 400,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "2Z2",
+    "dest": "NSAM",
+    "fiber_length": 420,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "2Z2",
+    "dest": "PENT",
+    "fiber_length": 220,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "6S6",
+    "dest": "6V0",
+    "fiber_length": 1450,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "6S6",
+    "dest": "C",
+    "fiber_length": 957,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "6S6",
+    "dest": "NSAM",
+    "fiber_length": 1297,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "6V0",
+    "dest": "2Z2",
+    "fiber_length": 450,
+    "srlg": "SRLG4"
+  },
+  {
+    "node": "6V0",
+    "dest": "9V0",
+    "fiber_length": 5250,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "6V0",
+    "dest": "PENT",
+    "fiber_length": 460,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "9V0",
+    "dest": "2Z2",
+    "fiber_length": 11000,
+    "srlg": "SRLG7"
+  },
+  {
+    "node": "9V0",
+    "dest": "6S6",
+    "fiber_length": 1200,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "9V0",
+    "dest": "6V0",
+    "fiber_length": 5250,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "A",
+    "dest": "2Z2",
+    "fiber_length": 240,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "A",
+    "dest": "AREA",
+    "fiber_length": 410,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "A",
+    "dest": "BMIDDLE",
+    "fiber_length": 1000,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "A",
+    "dest": "BOLL",
+    "fiber_length": 1278,
+    "srlg": "SRLG7"
+  },
+  {
+    "node": "A",
+    "dest": "C",
+    "fiber_length": 11025,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "A",
+    "dest": "D",
+    "fiber_length": 300,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "A",
+    "dest": "G",
+    "fiber_length": 12340,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "A",
+    "dest": "MIDSPAN",
+    "fiber_length": 1450,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "AREA",
+    "dest": "6V0",
+    "fiber_length": 440,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "AREA",
+    "dest": "A",
+    "fiber_length": 250,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "AREA",
+    "dest": "PENT",
+    "fiber_length": 390,
+    "srlg": "SRLG7"
+  },
+  {
+    "node": "B",
+    "dest": "A",
+    "fiber_length": 260,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "B",
+    "dest": "C",
+    "fiber_length": 120,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "BMIDDLE",
+    "dest": "B",
+    "fiber_length": 1500,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "BOLL",
+    "dest": "AREA",
+    "fiber_length": 480,
+    "srlg": "SRLG6"
+  },
+  {
+    "node": "BOLL",
+    "dest": "MIDSPAN",
+    "fiber_length": 1475,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "BOLL",
+    "dest": "NSAM",
+    "fiber_length": 470,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "C",
+    "dest": "A",
+    "fiber_length": 270,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "C",
+    "dest": "B",
+    "fiber_length": 280,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "C",
+    "dest": "D",
+    "fiber_length": 130,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "D",
+    "dest": "A",
+    "fiber_length": 140,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "D",
+    "dest": "C",
+    "fiber_length": 290,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "D",
+    "dest": "E",
+    "fiber_length": 150,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "D",
+    "dest": "G",
+    "fiber_length": 190,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "E",
+    "dest": "A",
+    "fiber_length": 360,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "E",
+    "dest": "F",
+    "fiber_length": 160,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "F",
+    "dest": "E",
+    "fiber_length": 320,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "F",
+    "dest": "G",
+    "fiber_length": 170,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "G",
+    "dest": "A",
+    "fiber_length": 180,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "G",
+    "dest": "D",
+    "fiber_length": 350,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "G",
+    "dest": "F",
+    "fiber_length": 330,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "MIDSPAN",
+    "dest": "6S6",
+    "fiber_length": 1457,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "MIDSPAN",
+    "dest": "6V0",
+    "fiber_length": 275,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "MIDSPAN",
+    "dest": "BOLL",
+    "fiber_length": 1475,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "NSAM",
+    "dest": "AREA",
+    "fiber_length": 430,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "NSAM",
+    "dest": "BOLL",
+    "fiber_length": 470,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "NSAM",
+    "dest": "MIDSPAN",
+    "fiber_length": 1100,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "PENT",
+    "dest": "2Z2",
+    "fiber_length": 380,
+    "srlg": "SRLG2"
+  },
+  {
+    "node": "PENT",
+    "dest": "6S6",
+    "fiber_length": 19275,
+    "srlg": "SRLG3"
+  },
+  {
+    "node": "PENT",
+    "dest": "6V0",
+    "fiber_length": 460,
+    "srlg": "SRLG5"
+  },
+  {
+    "node": "PENT",
+    "dest": "AREA",
+    "fiber_length": 230,
+    "srlg": "SRLG1"
+  },
+  {
+    "node": "Z",
+    "dest": "2Z2",
+    "fiber_length": 1000,
+    "srlg": "SRLG1"
+  }
+]
